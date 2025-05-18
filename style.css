@@ -774,6 +774,7 @@ footer {
 /* Add top padding to information section to prevent header overlap */
 .information {
   padding-top: 6rem;
+  background: red !important;
 }
 
 @media (max-width: 900px) {
