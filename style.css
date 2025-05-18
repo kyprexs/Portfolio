@@ -683,3 +683,101 @@ footer {
   display: inline-block;
   min-width: 10ch;
 }
+
+/* Responsive header and nav */
+@media (max-width: 900px) {
+  header .container .content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  header .container .content nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.5rem;
+  }
+  header .container .content .logo {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Responsive hero section */
+@media (max-width: 640px) {
+  .hero .container .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero .container .content .left-side,
+  .hero .container .content .right-side {
+    width: 100%;
+  }
+  .hero .container .content .left-side h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    word-break: break-word;
+  }
+  .hero .container .content .left-side h3 {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .highlight {
+    font-size: 1.2rem;
+    padding: 0.1em 0.2em;
+    min-width: 0;
+    word-break: break-word;
+  }
+}
+
+/* Responsive project cards */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .project-card {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Responsive tech grid */
+@media (max-width: 640px) {
+  .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .tech-grid img {
+    width: 40px;
+  }
+}
+
+/* Responsive about/information section */
+@media (max-width: 900px) {
+  .two-col {
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+    gap: 1.5rem;
+  }
+  .section__media img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .section__text {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Add top padding to information section to prevent header overlap */
+.information {
+  padding-top: 6rem;
+}
+
+@media (max-width: 900px) {
+  .information {
+    padding-top: 4rem;
+  }
+}
