@@ -60,10 +60,7 @@ Portfolio/
 ├── script.js
 └── README.md
 ```
-<<<<<<< HEAD
 
-=======
->>>>>>> f02be6ec900875fc66353959e0290ed95fe1f700
 ---
 
 ## 📄 License
