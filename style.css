@@ -186,20 +186,7 @@ header .container .content .extra-nav .menu {
   padding: 4px 8px 8px 8px;
   color: #000;
   border-radius: 8px;
-}
-
-.hero .container .content .left-side h1 .text-background::before {
-  content: "";
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  animation: text-background 1.5s;
-  animation-delay: 0.5s;
-  z-index: -1;
+  background: #fff;
 }
 
 .hero .container .content .left-side .action {
@@ -279,11 +266,11 @@ header .container .content .extra-nav .menu {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
 }
 
 .project-card .project-image {
@@ -585,16 +572,6 @@ footer {
   }
 }
 
-@keyframes text-background {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
 @keyframes animate {
   0%,
   18%,
@@ -663,6 +640,12 @@ footer {
   height: auto;
   max-width: 100%;
   object-fit: contain;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.tech-grid img:hover {
+  box-shadow: 0 0 16px #fff, 0 0 32px #007bff;
+  transform: scale(1.1);
 }
 
 @media (max-width: 640px) {
@@ -672,7 +655,8 @@ footer {
 }
 
 .section__text {
-  padding-left: 2.5rem;
+  padding-left: 3.5rem;
+  font-size: 1.15rem;
 }
 
 @media (max-width: 900px) {
@@ -683,4 +667,19 @@ footer {
 
 .section__text p {
   line-height: 1.7;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.highlight {
+  background: #fff;
+  color: #000;
+  padding: 0.1em 0.3em;
+  border-radius: 0.15em;
+  display: inline-block;
+  min-width: 10ch;
 }
