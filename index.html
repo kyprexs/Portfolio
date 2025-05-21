@@ -137,13 +137,26 @@
               <button class="view-details" onclick="window.open('https://github.com/kyprexs/roblox-valuator-bot', '_blank')">View Details</button>
             </div>
 
-            <div class="project-card">
-              <img src="assets/portfoliotemplate.png" alt="Portfolio Template" />
+            <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+              <div class="project-image">
+                <img src="assets/portfoliotemplate.png" alt="Portfolio Template" />
+              </div>
               <h3>Portfolio Template</h3>
               <p>
                 A modern, customizable portfolio template built with Next.js and Tailwind CSS. Features a clean design, responsive layout, and easy project/skills editing. Perfect for developers who want a fast, beautiful personal site.
               </p>
               <button class="view-details" onclick="window.open('https://github.com/kyprexs/Medevil-Portfolio', '_blank')">View Details</button>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+              <div class="project-image">
+                <img src="assets/spaceportfolio.png" alt="Space Portfolio Template" />
+              </div>
+              <h3>Space Portfolio Template</h3>
+              <p>
+                A beautiful, modern, and fully responsive portfolio template for full-stack developers. Built with Next.js and Tailwind CSS, featuring animated hero sections, project showcases, and easy customization through a single config file.
+              </p>
+              <button class="view-details" onclick="window.open('https://github.com/kyprexs/spaceportfolio-template', '_blank')">View Details</button>
             </div>
           </div>
         </div>
@@ -269,6 +282,38 @@
         loop: true,
         showCursor: true,
         cursorChar: '|'
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('.project-image img');
+        let loaded = 0;
+        function showAll() {
+          images.forEach(img => {
+            img.style.transition = 'none';
+            img.classList.remove('visible');
+            void img.offsetWidth;
+            img.style.transition = '';
+          });
+          setTimeout(() => {
+            images.forEach(img => img.classList.add('visible'));
+          }, 50);
+        }
+        images.forEach(img => {
+          if (img.complete) {
+            loaded++;
+          } else {
+            img.addEventListener('load', () => {
+              loaded++;
+              if (loaded === images.length) showAll();
+            });
+            img.addEventListener('error', () => {
+              loaded++;
+              if (loaded === images.length) showAll();
+            });
+          }
+        });
+        if (loaded === images.length) showAll();
       });
     </script>
   </body>
