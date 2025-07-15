@@ -12,6 +12,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <title>Alexander West – Portfolio</title>
+        <meta name="description" content="Personal portfolio site for Alexander West showcasing full-stack projects, core skills, and contact info." />
         <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
       </head>
       <body>{children}</body>
