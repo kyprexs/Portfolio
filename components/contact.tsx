@@ -33,7 +33,7 @@ export function Contact() {
           </a>
           <a href="mailto:x4xmails@gmail.com?subject=Project%20Possibility" aria-label="Email" className="text-[#B0B0B0] hover:text-[#00FFFF] transition-colors duration-200 text-2xl">
             <Mail size={32} />
-          </a>
+            </a>
         </div>
 
         {/* Footer */}
