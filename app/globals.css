@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +15,302 @@ html {
 }
 
 body {
-  font-family: var(--font-inter), system-ui, sans-serif;
-  background-color: #0f0f0f;
+  font-family: 'VT323', monospace;
+  background-color: #000000;
   color: #ffffff;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Static starry background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(8px 8px at 20px 30px, #ffffff, transparent),
+    radial-gradient(6px 6px at 40px 70px, #ffffff, transparent),
+    radial-gradient(8px 8px at 90px 40px, #ffffff, transparent),
+    radial-gradient(6px 6px at 130px 80px, #ffffff, transparent),
+    radial-gradient(8px 8px at 160px 30px, #ffffff, transparent),
+    radial-gradient(6px 6px at 200px 50px, #ffffff, transparent),
+    radial-gradient(8px 8px at 250px 20px, #ffffff, transparent),
+    radial-gradient(6px 6px at 280px 90px, #ffffff, transparent),
+    radial-gradient(8px 8px at 320px 60px, #ffffff, transparent),
+    radial-gradient(6px 6px at 350px 10px, #ffffff, transparent),
+    radial-gradient(8px 8px at 380px 80px, #ffffff, transparent),
+    radial-gradient(6px 6px at 420px 40px, #ffffff, transparent),
+    radial-gradient(8px 8px at 450px 70px, #ffffff, transparent),
+    radial-gradient(6px 6px at 480px 30px, #ffffff, transparent),
+    radial-gradient(8px 8px at 520px 100px, #ffffff, transparent),
+    radial-gradient(6px 6px at 550px 150px, #ffffff, transparent),
+    radial-gradient(8px 8px at 580px 80px, #ffffff, transparent),
+    radial-gradient(6px 6px at 610px 120px, #ffffff, transparent),
+    radial-gradient(8px 8px at 640px 60px, #ffffff, transparent),
+    radial-gradient(6px 6px at 670px 180px, #ffffff, transparent),
+    radial-gradient(8px 8px at 700px 200px, #ffffff, transparent),
+    radial-gradient(6px 6px at 730px 100px, #ffffff, transparent),
+    radial-gradient(8px 8px at 760px 160px, #ffffff, transparent),
+    radial-gradient(6px 6px at 790px 140px, #ffffff, transparent),
+    radial-gradient(8px 8px at 820px 180px, #ffffff, transparent),
+    radial-gradient(6px 6px at 850px 120px, #ffffff, transparent),
+    radial-gradient(8px 8px at 880px 90px, #ffffff, transparent),
+    radial-gradient(6px 6px at 910px 170px, #ffffff, transparent),
+    radial-gradient(8px 8px at 940px 110px, #ffffff, transparent),
+    radial-gradient(6px 6px at 970px 190px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1000px 220px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1030px 80px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1060px 140px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1090px 200px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1120px 60px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1150px 180px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1180px 120px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1210px 160px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1240px 100px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1270px 240px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1300px 40px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1330px 200px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1360px 80px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1390px 140px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1420px 180px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1450px 120px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1480px 160px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1510px 100px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1540px 220px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1570px 60px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1600px 200px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1630px 140px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1660px 180px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1690px 120px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1720px 160px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1750px 100px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1780px 240px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1810px 80px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1840px 200px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1870px 140px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1900px 180px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1930px 120px, #ffffff, transparent),
+    radial-gradient(8px 8px at 1960px 160px, #ffffff, transparent),
+    radial-gradient(6px 6px at 1990px 100px, #ffffff, transparent);
+  background-repeat: repeat;
+  background-size: 2020px 250px;
+  z-index: -1;
+}
+
+/* Shooting star animation */
+@keyframes shooting-star {
+  0% {
+    transform: translateX(-100px) translateY(0px) rotate(45deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(calc(100vh + 100px)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Shooting star element */
+.shooting-star {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #ffffff;
+  animation: shooting-star 3s linear infinite;
+  z-index: -1;
+}
+
+.shooting-star:nth-child(1) {
+  animation-delay: 0s;
+  top: 20%;
+}
+
+.shooting-star:nth-child(2) {
+  animation-delay: 2s;
+  top: 40%;
+}
+
+.shooting-star:nth-child(3) {
+  animation-delay: 4s;
+  top: 60%;
+}
+
+.shooting-star:nth-child(4) {
+  animation-delay: 6s;
+  top: 80%;
+}
+
+/* Pixelated borders and elements */
+.pixel-border {
+  border: 2px solid #ffffff;
+  box-shadow: 
+    inset -2px -2px 0 #333333,
+    inset 2px 2px 0 #ffffff;
+}
+
+.pixel-border-inverse {
+  border: 2px solid #ffffff;
+  box-shadow: 
+    inset -2px -2px 0 #ffffff,
+    inset 2px 2px 0 #333333;
+}
+
+/* Retro button styling */
+.retro-button {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 8px 16px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 
+    inset -2px -2px 0 #333333,
+    inset 2px 2px 0 #ffffff;
+}
+
+.retro-button:hover {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: 
+    inset -2px -2px 0 #ffffff,
+    inset 2px 2px 0 #333333;
+}
+
+.retro-button:active {
+  transform: translateY(2px);
+}
+
+/* Progress bars */
+.progress-bar {
+  background: #333333;
+  border: 2px solid #ffffff;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #ffffff;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Data panels */
+.data-panel {
+  background: #000000;
+  border: 2px solid #ffffff;
+  padding: 12px;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Navigation menu */
+.nav-menu {
+  background: #000000;
+  border: 2px solid #ffffff;
+  padding: 8px;
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px 8px;
+  display: block;
+  transition: all 0.1s ease;
+}
+
+.nav-item:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Character glow effect */
+.character-glow {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/* Quote box */
+.quote-box {
+  background: #000000;
+  border: 2px solid #ffffff;
+  padding: 12px;
+  font-family: 'VT323', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Music player */
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #000000;
+  border: 2px solid #ffffff;
+  padding: 8px 12px;
+  font-family: 'VT323', monospace;
+  font-size: 14px;
+}
+
+/* Top bar icons */
+.top-bar-icon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ffffff;
+  background: #000000;
+  display: inline-block;
+  margin: 0 4px;
+  position: relative;
+}
+
+.top-bar-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+}
+
+/* Character styling */
+.character-glow {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+/* Music player play button */
+.play-button {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  background: #000000;
+  position: relative;
+}
+
+.play-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid #ffffff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  margin-left: 1px;
 }
 
 /* Custom scrollbar */
@@ -25,21 +319,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #000000;
+  border: 1px solid #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2e2e2e;
-  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #000000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00ffff;
-}
-
-/* Smooth animations */
-* {
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  background: #cccccc;
 }
 
 /* Focus styles */
@@ -47,20 +337,29 @@ button:focus,
 input:focus,
 textarea:focus,
 a:focus {
-  outline: 2px solid #00ffff;
+  outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
 
 /* Selection styles */
 ::selection {
-  background-color: #00ffff;
-  color: #0f0f0f;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-/* Gradient text effect */
-.gradient-text {
-  background: linear-gradient(135deg, #00ffff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .data-panel {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  .quote-box {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
