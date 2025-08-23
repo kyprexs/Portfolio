@@ -3,16 +3,16 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "HT - Space Agent Portfolio",
-  description: "Retro 8-bit space-themed portfolio showcasing skills, projects, and cosmic adventures.",
+  title: "Alex West - ML Engineer",
+  description: "ML Engineer portfolio showcasing NeuralScript, custom neural networks, and scientific computing projects.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <title>HT - Space Agent Portfolio</title>
-        <meta name="description" content="Retro 8-bit space-themed portfolio showcasing skills, projects, and cosmic adventures." />
+        <title>Alex West - ML Engineer</title>
+        <meta name="description" content="ML Engineer portfolio showcasing NeuralScript, custom neural networks, and scientific computing projects." />
         <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
       </head>
       <body>{children}</body>
