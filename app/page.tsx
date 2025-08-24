@@ -15,22 +15,22 @@ export default function Home() {
               <div className="data-panel">
                 <div className="mb-4 font-bold">RESEARCHER ID #1337</div>
                 <div className="space-y-2">
-                  <div>> NAME: Alex West</div>
-                  <div>> ROLE: ML Engineer & Researcher</div>
-                  <div>> YEARS: 4+ Experience</div>
-                  <div>> LOCATION: Victoria, BC</div>
-                  <div>> STATUS: Available for hire</div>
+                  <div>&gt; NAME: Alex West</div>
+                  <div>&gt; ROLE: ML Engineer & Researcher</div>
+                  <div>&gt; YEARS: 4+ Experience</div>
+                  <div>&gt; LOCATION: Victoria, BC</div>
+                  <div>&gt; STATUS: Available for hire</div>
                 </div>
               </div>
               
               <div className="data-panel">
                 <div className="mb-4 font-bold">TECH STACK...</div>
                 <div className="space-y-2">
-                  <div>> ML: TensorFlow, PyTorch, Scikit-learn</div>
-                  <div>> SCIENTIFIC: NumPy, Pandas, SciPy, Jupyter</div>
-                  <div>> LANGUAGES: Python, C++, Julia, R</div>
-                  <div>> TOOLS: Git, Docker, AWS, Linux</div>
-                  <div>> RESEARCH: Computer Vision, NLP, Optimization</div>
+                  <div>&gt; ML: TensorFlow, PyTorch, Scikit-learn</div>
+                  <div>&gt; SCIENTIFIC: NumPy, Pandas, SciPy, Jupyter</div>
+                  <div>&gt; LANGUAGES: Python, C++, Julia, R</div>
+                  <div>&gt; TOOLS: Git, Docker, AWS, Linux</div>
+                  <div>&gt; RESEARCH: Computer Vision, NLP, Optimization</div>
                 </div>
               </div>
             </div>
@@ -40,19 +40,31 @@ export default function Home() {
               <div className="mb-4 font-bold">PROJECTS PORTFOLIO</div>
               <div className="space-y-4">
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; NEURALSCRIPT LANGUAGE</div>
+                  <div className="font-bold mb-2">
+                    <a href="https://github.com/kyprexs/NeuralScript" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
+                      &gt; NEURALSCRIPT LANGUAGE
+                    </a>
+                  </div>
                   <div className="text-sm mb-2">Custom programming language for ML and scientific computing</div>
                   <div className="text-xs">TECH: Python, LLVM, SIMD, Memory Management</div>
                   <div className="text-xs mt-1">FEATURES: Unicode math operators, GPU acceleration, 10k+ LOC</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; NEURAL NETWORK FRAMEWORK</div>
+                  <div className="font-bold mb-2">
+                    <a href="https://github.com/kyprexs/NeuralNetwork" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
+                      &gt; NEURAL NETWORK FRAMEWORK
+                    </a>
+                  </div>
                   <div className="text-sm mb-2">Neural network implementation built completely from scratch</div>
                   <div className="text-xs">TECH: Python, NumPy, Backpropagation, Optimization</div>
                   <div className="text-xs mt-1">FEATURES: Custom layers, training algorithms, model serialization</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; GITHUB PROFILE ANALYZER</div>
+                  <div className="font-bold mb-2">
+                    <a href="https://github.com/kyprexs/github-profile-analyzer" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
+                      &gt; GITHUB PROFILE ANALYZER
+                    </a>
+                  </div>
                   <div className="text-sm mb-2">AI-powered GitHub profile analysis and insights tool</div>
                   <div className="text-xs">TECH: Python, GitHub API, Data Analysis, Visualization</div>
                   <div className="text-xs mt-1">FEATURES: Profile scoring, contribution analysis, trend detection</div>
@@ -69,17 +81,17 @@ export default function Home() {
               <div className="mb-4 font-bold">ADDITIONAL PROJECTS</div>
               <div className="space-y-4">
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> COMPUTER VISION API</div>
+                  <div className="font-bold mb-2">&gt; COMPUTER VISION API</div>
                   <div className="text-sm mb-2">Real-time object detection and classification service</div>
                   <div className="text-xs">TECH: FastAPI, YOLO, Redis</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> ML MODEL DEPLOYMENT</div>
+                  <div className="font-bold mb-2">&gt; ML MODEL DEPLOYMENT</div>
                   <div className="text-sm mb-2">Scalable model serving infrastructure</div>
                   <div className="text-xs">TECH: Kubernetes, TensorFlow Serving, Docker</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> DATA PIPELINE SYSTEM</div>
+                  <div className="font-bold mb-2">&gt; DATA PIPELINE SYSTEM</div>
                   <div className="text-sm mb-2">Automated data processing and feature engineering</div>
                   <div className="text-xs">TECH: Apache Airflow, Spark, PostgreSQL</div>
                 </div>
@@ -95,17 +107,17 @@ export default function Home() {
               <div className="mb-4 font-bold">RESEARCH & PUBLICATIONS</div>
               <div className="space-y-4">
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> CONFERENCE PAPERS</div>
+                  <div className="font-bold mb-2">&gt; CONFERENCE PAPERS</div>
                   <div className="text-sm mb-2">NeurIPS, ICML, CVPR - 3 publications</div>
                   <div className="text-xs">TOPICS: Computer Vision, Optimization</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> RESEARCH AREAS</div>
+                  <div className="font-bold mb-2">&gt; RESEARCH AREAS</div>
                   <div className="text-sm mb-2">Deep Learning, Scientific Computing, AI Ethics</div>
                   <div className="text-xs">SPECIALIZATION: ML for Scientific Applications</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> ACADEMIC BACKGROUND</div>
+                  <div className="font-bold mb-2">&gt; ACADEMIC BACKGROUND</div>
                   <div className="text-sm mb-2">MSc Computer Science, BSc Mathematics</div>
                   <div className="text-xs">FOCUS: Machine Learning & Statistics</div>
                 </div>
@@ -121,11 +133,11 @@ export default function Home() {
               <div className="mb-4 font-bold">CONTACT INFORMATION</div>
               <div className="space-y-4">
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> EMAIL</div>
+                  <div className="font-bold mb-2">&gt; EMAIL</div>
                   <div className="text-sm">x4xmails@gmail.com</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> GITHUB</div>
+                  <div className="font-bold mb-2">&gt; GITHUB</div>
                   <div className="text-sm">
                     <a href="https://github.com/kyprexs" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
                       github.com/kyprexs
@@ -133,7 +145,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">> AVAILABILITY</div>
+                  <div className="font-bold mb-2">&gt; AVAILABILITY</div>
                   <div className="text-sm">Open to full-time positions and consulting</div>
                   <div className="text-xs">REMOTE & ON-SITE: Victoria, BC</div>
                 </div>
