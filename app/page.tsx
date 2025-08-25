@@ -61,13 +61,13 @@ export default function Home() {
                 </div>
                 <div className="pixel-border p-3">
                   <div className="font-bold mb-2">
-                    <a href="https://github.com/kyprexs/github-profile-analyzer" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
-                      &gt; GITHUB PROFILE ANALYZER
+                    <a href="https://github.com/kyprexs/Algok23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
+                      &gt; ALGOK23 - ALGORITHMIC TRADING SYSTEM
                     </a>
                   </div>
-                  <div className="text-sm mb-2">AI-powered GitHub profile analysis and insights tool</div>
-                  <div className="text-xs">TECH: Python, GitHub API, Data Analysis, Visualization</div>
-                  <div className="text-xs mt-1">FEATURES: Profile scoring, contribution analysis, trend detection</div>
+                  <div className="text-sm mb-2">Advanced algorithmic trading platform with machine learning capabilities</div>
+                  <div className="text-xs">TECH: Python, Machine Learning, PostgreSQL, Redis, Docker</div>
+                  <div className="text-xs mt-1">FEATURES: Multi-exchange data, 150+ features, real-time ML inference</div>
                 </div>
               </div>
             </div>
