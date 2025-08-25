@@ -107,19 +107,44 @@ export default function Home() {
               <div className="mb-4 font-bold">RESEARCH & PUBLICATIONS</div>
               <div className="space-y-4">
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; CONFERENCE PAPERS</div>
-                  <div className="text-sm mb-2">NeurIPS, ICML, CVPR - 3 publications</div>
-                  <div className="text-xs">TOPICS: Computer Vision, Optimization</div>
+                  <div className="font-bold mb-2">
+                    <a href="/research/AgloK23_Executive_Summary" className="text-white hover:text-gray-300 underline">
+                      &gt; ALGOK23: EXECUTIVE SUMMARY
+                    </a>
+                  </div>
+                  <div className="text-sm mb-2">Next-Generation Algorithmic Trading Platform</div>
+                  <div className="text-xs">TOPICS: 1.73 Sharpe Ratio, 18.4% Returns, Sub-5ms Latency</div>
+                  <div className="text-xs mt-1">FEATURES: ML Architecture, Alternative Data, Risk Management</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; RESEARCH AREAS</div>
-                  <div className="text-sm mb-2">Deep Learning, Scientific Computing, AI Ethics</div>
-                  <div className="text-xs">SPECIALIZATION: ML for Scientific Applications</div>
+                  <div className="font-bold mb-2">
+                    <a href="/research/AgloK23_Machine_Learning_Architecture" className="text-white hover:text-gray-300 underline">
+                      &gt; MACHINE LEARNING ARCHITECTURE
+                    </a>
+                  </div>
+                  <div className="text-sm mb-2">High-Frequency Algorithmic Trading Framework</div>
+                  <div className="text-xs">TOPICS: Ensemble Models, Deep Learning, Reinforcement Learning</div>
+                  <div className="text-xs mt-1">FEATURES: 1.2M ticks/sec, 99.9% Uptime, Real-time ML</div>
                 </div>
                 <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; ACADEMIC BACKGROUND</div>
-                  <div className="text-sm mb-2">MSc Computer Science, BSc Mathematics</div>
-                  <div className="text-xs">FOCUS: Machine Learning & Statistics</div>
+                  <div className="font-bold mb-2">
+                    <a href="/research/AgloK23_Alternative_Data_AI_Trading" className="text-white hover:text-gray-300 underline">
+                      &gt; ALTERNATIVE DATA & AI TRADING
+                    </a>
+                  </div>
+                  <div className="text-sm mb-2">Satellite Imagery, Sentiment Analysis, On-Chain Analytics</div>
+                  <div className="text-xs">TOPICS: 15-20% Alpha Improvement, Multi-Source Integration</div>
+                  <div className="text-xs mt-1">FEATURES: Computer Vision, Transformer Models, Real-time Processing</div>
+                </div>
+                <div className="pixel-border p-3">
+                  <div className="font-bold mb-2">
+                    <a href="/research/AgloK23_Risk_Management_Analytics" className="text-white hover:text-gray-300 underline">
+                      &gt; RISK MANAGEMENT & ANALYTICS
+                    </a>
+                  </div>
+                  <div className="text-sm mb-2">Real-Time Portfolio Risk Monitoring & Analytics</div>
+                  <div className="text-xs">TOPICS: VaR Calculations, Correlation Risk, Dynamic Position Sizing</div>
+                  <div className="text-xs mt-1">FEATURES: 1M+ Risk Calculations/sec, Regulatory Compliance</div>
                 </div>
               </div>
             </div>
