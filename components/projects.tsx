@@ -1,7 +1,16 @@
-import { ExternalLink, Github, Database, Zap, Globe, Bot } from "lucide-react"
+import { ExternalLink, Github, Database, Zap, Globe, Bot, TrendingUp } from "lucide-react"
 
 export function Projects() {
   const projects = [
+    {
+      title: "Algok23 - Algorithmic Trading System",
+      description:
+        "Advanced algorithmic trading platform with machine learning capabilities. Features multi-exchange data ingestion, alternative data analysis (satellite imagery & sentiment), 150+ engineered features, and comprehensive backtesting infrastructure. Supports cryptocurrency and traditional markets with real-time ML inference.",
+      tech: ["Python", "Machine Learning", "PostgreSQL", "Redis", "Docker"],
+      icon: <TrendingUp className="text-[#00FFFF]" size={32} />,
+      github: "https://github.com/kyprexs/Algok23",
+      demo: "https://github.com/kyprexs/Algok23",
+    },
     {
       title: "Neural Network from Scratch",
       description:
