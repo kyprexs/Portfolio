@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // output: "export", // Commented out for development server
+  output: "export", // Enable static export for GitHub Pages
   assetPrefix: "/",
 }
 
