@@ -51,13 +51,13 @@ export default function Home() {
                 </div>
                 <div className="pixel-border p-3">
                   <div className="font-bold mb-2">
-                    <a href="https://github.com/kyprexs/NeuralScript" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
-                      &gt; NEURALSCRIPT LANGUAGE
+                    <a href="https://github.com/kyprexs/spaceportfolio-template" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
+                      &gt; SPACE PORTFOLIO TEMPLATE
                     </a>
                   </div>
-                  <div className="text-sm mb-2">Custom programming language for ML and scientific computing</div>
-                  <div className="text-xs">TECH: Python, LLVM, SIMD, Memory Management</div>
-                  <div className="text-xs mt-1">FEATURES: Unicode math operators, GPU acceleration, 10k+ LOC</div>
+                  <div className="text-sm mb-2">Visually stunning portfolio template inspired by space exploration</div>
+                  <div className="text-xs">TECH: Next.js, TailwindCSS, Framer Motion</div>
+                  <div className="text-xs mt-1">FEATURES: Animated backgrounds, responsive layouts, modern tech stack</div>
                 </div>
                 <div className="pixel-border p-3">
                   <div className="font-bold mb-2">

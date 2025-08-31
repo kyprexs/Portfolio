@@ -12,13 +12,13 @@ export function Projects() {
       demo: "https://github.com/kyprexs/NeuralNetwork",
     },
     {
-      title: "NeuralScript Language",
+      title: "Space Portfolio Template",
       description:
-        "Custom programming language for ML and scientific computing with Unicode math operators, GPU acceleration, and advanced memory management. Built from scratch with over 10,000 lines of code.",
-      tech: ["Python", "LLVM", "SIMD", "Memory Management"],
-      icon: <Bot className="text-[#00FFFF]" size={32} />,
-      github: "https://github.com/kyprexs/NeuralScript",
-      demo: "https://github.com/kyprexs/NeuralScript",
+        "A visually stunning portfolio template inspired by space exploration. Features animated backgrounds, responsive layouts, and a modern tech stack. Perfect for developers who want a unique online presence.",
+      tech: ["Next.js", "TailwindCSS", "Framer Motion"],
+      icon: <Globe className="text-[#00FFFF]" size={32} />,
+      github: "https://github.com/kyprexs/spaceportfolio-template",
+      demo: "https://github.com/kyprexs/spaceportfolio-template",
     },
     {
       title: "Medieval Portfolio Template",
