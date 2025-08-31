@@ -41,16 +41,6 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="pixel-border p-3">
                   <div className="font-bold mb-2">
-                    <a href="https://github.com/kyprexs/NeuralScript" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
-                      &gt; NEURALSCRIPT LANGUAGE
-                    </a>
-                  </div>
-                  <div className="text-sm mb-2">Custom programming language for ML and scientific computing</div>
-                  <div className="text-xs">TECH: Python, LLVM, SIMD, Memory Management</div>
-                  <div className="text-xs mt-1">FEATURES: Unicode math operators, GPU acceleration, 10k+ LOC</div>
-                </div>
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">
                     <a href="https://github.com/kyprexs/NeuralNetwork" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
                       &gt; NEURAL NETWORK FRAMEWORK
                     </a>
@@ -61,95 +51,30 @@ export default function Home() {
                 </div>
                 <div className="pixel-border p-3">
                   <div className="font-bold mb-2">
-                    <a href="https://github.com/kyprexs/Algok23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
-                      &gt; ALGOK23 - ALGORITHMIC TRADING SYSTEM
+                    <a href="https://github.com/kyprexs/NeuralScript" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
+                      &gt; NEURALSCRIPT LANGUAGE
                     </a>
                   </div>
-                  <div className="text-sm mb-2">Advanced algorithmic trading platform with machine learning capabilities</div>
-                  <div className="text-xs">TECH: Python, Machine Learning, PostgreSQL, Redis, Docker</div>
-                  <div className="text-xs mt-1">FEATURES: Multi-exchange data, 150+ features, real-time ML inference</div>
+                  <div className="text-sm mb-2">Custom programming language for ML and scientific computing</div>
+                  <div className="text-xs">TECH: Python, LLVM, SIMD, Memory Management</div>
+                  <div className="text-xs mt-1">FEATURES: Unicode math operators, GPU acceleration, 10k+ LOC</div>
+                </div>
+                <div className="pixel-border p-3">
+                  <div className="font-bold mb-2">
+                    <a href="https://github.com/kyprexs/Medevil-Portfolio" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 underline">
+                      &gt; MEDIEVAL PORTFOLIO TEMPLATE
+                    </a>
+                  </div>
+                  <div className="text-sm mb-2">Customizable medieval-themed developer portfolio template</div>
+                  <div className="text-xs">TECH: Next.js, TailwindCSS, TypeScript</div>
+                  <div className="text-xs mt-1">FEATURES: Fantasy styling, custom illustrations, responsive design</div>
                 </div>
               </div>
             </div>
           </div>
         )
       
-      case 'message':
-        return (
-          <div className="space-y-6">
-            <div className="data-panel">
-              <div className="mb-4 font-bold">ADDITIONAL PROJECTS</div>
-              <div className="space-y-4">
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; COMPUTER VISION API</div>
-                  <div className="text-sm mb-2">Real-time object detection and classification service</div>
-                  <div className="text-xs">TECH: FastAPI, YOLO, Redis</div>
-                </div>
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; ML MODEL DEPLOYMENT</div>
-                  <div className="text-sm mb-2">Scalable model serving infrastructure</div>
-                  <div className="text-xs">TECH: Kubernetes, TensorFlow Serving, Docker</div>
-                </div>
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">&gt; DATA PIPELINE SYSTEM</div>
-                  <div className="text-sm mb-2">Automated data processing and feature engineering</div>
-                  <div className="text-xs">TECH: Apache Airflow, Spark, PostgreSQL</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-      
-      case 'trophies':
-        return (
-          <div className="space-y-6">
-            <div className="data-panel">
-              <div className="mb-4 font-bold">RESEARCH & PUBLICATIONS</div>
-              <div className="space-y-4">
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">
-                    <a href="/research/AgloK23_Executive_Summary" className="text-white hover:text-gray-300 underline">
-                      &gt; ALGOK23: EXECUTIVE SUMMARY
-                    </a>
-                  </div>
-                  <div className="text-sm mb-2">Next-Generation Algorithmic Trading Platform</div>
-                  <div className="text-xs">TOPICS: 1.73 Sharpe Ratio, 18.4% Returns, Sub-5ms Latency</div>
-                  <div className="text-xs mt-1">FEATURES: ML Architecture, Alternative Data, Risk Management</div>
-                </div>
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">
-                    <a href="/research/AgloK23_Machine_Learning_Architecture" className="text-white hover:text-gray-300 underline">
-                      &gt; MACHINE LEARNING ARCHITECTURE
-                    </a>
-                  </div>
-                  <div className="text-sm mb-2">High-Frequency Algorithmic Trading Framework</div>
-                  <div className="text-xs">TOPICS: Ensemble Models, Deep Learning, Reinforcement Learning</div>
-                  <div className="text-xs mt-1">FEATURES: 1.2M ticks/sec, 99.9% Uptime, Real-time ML</div>
-                </div>
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">
-                    <a href="/research/AgloK23_Alternative_Data_AI_Trading" className="text-white hover:text-gray-300 underline">
-                      &gt; ALTERNATIVE DATA & AI TRADING
-                    </a>
-                  </div>
-                  <div className="text-sm mb-2">Satellite Imagery, Sentiment Analysis, On-Chain Analytics</div>
-                  <div className="text-xs">TOPICS: 15-20% Alpha Improvement, Multi-Source Integration</div>
-                  <div className="text-xs mt-1">FEATURES: Computer Vision, Transformer Models, Real-time Processing</div>
-                </div>
-                <div className="pixel-border p-3">
-                  <div className="font-bold mb-2">
-                    <a href="/research/AgloK23_Risk_Management_Analytics" className="text-white hover:text-gray-300 underline">
-                      &gt; RISK MANAGEMENT & ANALYTICS
-                    </a>
-                  </div>
-                  <div className="text-sm mb-2">Real-Time Portfolio Risk Monitoring & Analytics</div>
-                  <div className="text-xs">TOPICS: VaR Calculations, Correlation Risk, Dynamic Position Sizing</div>
-                  <div className="text-xs mt-1">FEATURES: 1M+ Risk Calculations/sec, Regulatory Compliance</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
+
       
       case 'inventory':
         return (
@@ -217,26 +142,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Achievement Badges */}
-            <div className="space-y-4">
-              <div className="pixel-border p-3">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">🏆</span>
-                  <span className="font-bold">LANGUAGE CREATOR</span>
-                </div>
-                <div className="text-sm">NeuralScript achievement</div>
-                <div className="text-xs mt-1 opacity-75">10k+ LOC • Production-ready</div>
-              </div>
-              
-              <div className="pixel-border p-3">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">⚡</span>
-                  <span className="font-bold">ML PIONEER</span>
-                </div>
-                <div className="text-sm">Custom neural network framework</div>
-                <div className="text-xs mt-1 opacity-75">From scratch • Advanced features</div>
-              </div>
-            </div>
+
 
             {/* Navigation Menu */}
             <div className="nav-menu">
@@ -245,18 +151,6 @@ export default function Home() {
                 onClick={() => setCurrentSection('profile')}
               >
                 ← HOME →
-              </button>
-              <button 
-                className={`nav-item w-full text-left border border-white p-3 mb-2 hover:bg-white hover:text-black transition-colors ${currentSection === 'message' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-600 text-white'}`}
-                onClick={() => setCurrentSection('message')}
-              >
-                MORE PROJECTS
-              </button>
-              <button 
-                className={`nav-item w-full text-left border border-white p-3 mb-2 hover:bg-white hover:text-black transition-colors ${currentSection === 'trophies' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-600 text-white'}`}
-                onClick={() => setCurrentSection('trophies')}
-              >
-                RESEARCH
               </button>
               <button 
                 className={`nav-item w-full text-left border border-white p-3 mb-2 hover:bg-white hover:text-black transition-colors ${currentSection === 'inventory' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-600 text-white'}`}

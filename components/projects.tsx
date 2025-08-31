@@ -3,38 +3,29 @@ import { ExternalLink, Github, Database, Zap, Globe, Bot, TrendingUp } from "luc
 export function Projects() {
   const projects = [
     {
-      title: "Algok23 - Algorithmic Trading System",
-      description:
-        "Advanced algorithmic trading platform with machine learning capabilities. Features multi-exchange data ingestion, alternative data analysis (satellite imagery & sentiment), 150+ engineered features, and comprehensive backtesting infrastructure. Supports cryptocurrency and traditional markets with real-time ML inference.",
-      tech: ["Python", "Machine Learning", "PostgreSQL", "Redis", "Docker"],
-      icon: <TrendingUp className="text-[#00FFFF]" size={32} />,
-      github: "https://github.com/kyprexs/Algok23",
-      demo: "https://github.com/kyprexs/Algok23",
-    },
-    {
       title: "Neural Network from Scratch",
       description:
         "Implemented a neural network from the ground up in Python, including forward and backward propagation, custom activation functions, and visualization tools. Great for learning the math and code behind deep learning.",
       tech: ["Python", "NumPy", "Matplotlib"],
-      icon: <Zap className="text-[#00FFFF]" size={32} />, // You can change icon if you prefer
+      icon: <Zap className="text-[#00FFFF]" size={32} />,
       github: "https://github.com/kyprexs/NeuralNetwork",
       demo: "https://github.com/kyprexs/NeuralNetwork",
     },
     {
-      title: "Space Portfolio",
+      title: "NeuralScript Language",
       description:
-        "A visually stunning portfolio template inspired by space exploration. Features animated backgrounds, responsive layouts, and a modern tech stack. Perfect for developers who want a unique online presence.",
-      tech: ["Next.js", "TailwindCSS", "Framer Motion"],
-      icon: <Globe className="text-[#00FFFF]" size={32} />, // You can change icon if you prefer
-      github: "https://github.com/kyprexs/spaceportfolio-template",
-      demo: "https://github.com/kyprexs/spaceportfolio-template",
+        "Custom programming language for ML and scientific computing with Unicode math operators, GPU acceleration, and advanced memory management. Built from scratch with over 10,000 lines of code.",
+      tech: ["Python", "LLVM", "SIMD", "Memory Management"],
+      icon: <Bot className="text-[#00FFFF]" size={32} />,
+      github: "https://github.com/kyprexs/NeuralScript",
+      demo: "https://github.com/kyprexs/NeuralScript",
     },
     {
-      title: "Medieval Portfolio",
+      title: "Medieval Portfolio Template",
       description:
-        "A creative portfolio template with a medieval theme, including custom illustrations, parchment-style backgrounds, and interactive elements. Designed for creative professionals and history enthusiasts.",
-      tech: ["React", "Styled Components", "SVG"],
-      icon: <Database className="text-[#00FFFF]" size={32} />, // You can change icon if you prefer
+        "A customizable, medieval-themed developer portfolio template built with Next.js and Tailwind CSS. Features fantasy styling, custom illustrations, and responsive design for creative professionals.",
+      tech: ["Next.js", "TailwindCSS", "TypeScript"],
+      icon: <Database className="text-[#00FFFF]" size={32} />,
       github: "https://github.com/kyprexs/Medevil-Portfolio",
       demo: "https://github.com/kyprexs/Medevil-Portfolio",
     },
